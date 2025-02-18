@@ -1,0 +1,371 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Wrapper for ID Card */
+.wrapper {
+    width: 124.002mm;
+    height: 83.872mm;
+    background-color: #fff;
+    border: 0.75pt solid #fff;
+    position: relative;
+    display: flex;
+    overflow: hidden;
+    flex-direction: column;
+}
+
+/* Background Styles */
+.background {
+    position: absolute;
+    background-color: #fff;
+    width: 100%;
+    height: 100%;
+}
+
+/* Front Side */
+.front {
+    left: -20pt; /* 0px */
+    margin-top: -0.69pt; /* -0.92px */
+    width: 59.002mm;
+    height: 83.872mm;
+    margin: 6.085mm;
+    background-color: #fbeaea;
+    position: absolute;
+    overflow: hidden;
+    top: -17pt; /* 0px */
+}
+
+/* Background Elements for Front */
+.id-dark-pink, .id-pink, .id-light-pink, .recttop, .recttop1, .recttop2 {
+    position: absolute;
+    width: 100%;
+    height: 1mm;
+}
+
+.id-dark-pink {
+    left: 0pt; /* 0px */
+    margin-top: -0.69pt; /* -0.92px */
+    width: 10mm; /* 71.7px */
+    height: 1mm; /* 30px */
+    background-color: rgb(1, 1, 1);
+    position: absolute;
+    top: 0pt; /* 0px */
+}
+
+.id-pink {
+    left: 49.036mm; /* 136px */
+    margin-top: -0.69pt; /* -0.92px */
+    width: 10mm; /* 90.8px */
+    height: 1mm; /* 30px */
+    background-color: rgb(4, 4, 4);
+    position: absolute;
+    top: 0mm; /* 0px */
+}
+
+.id-light-pink {
+    left: 10.583mm; /* 68px */
+    margin-top: -0.243mm; /* -0.92px */
+    width: 38mm; /* 71.7px */
+    height: 30mm; /* 30px */
+    background-color: rgb(132, 44, 128);
+    position: absolute;
+    top: 0mm; /* 0px */
+    border-bottom-left-radius: 28.346pt;
+    border-bottom-right-radius:28.346pt;
+}
+
+.recttop{
+    left: -0.705mm;
+    margin-top: -0.243mm;
+    width: 12mm;
+    height: 1mm;
+    background-color: rgb(7, 0, 4);
+    position: absolute;
+    bottom: 0.5mm;
+    transform: skew(-50deg, 0deg);
+   
+}
+
+.recttop1{
+    left: 4.586mm;
+    margin-top: -0.243mm;
+    width: 50mm;
+    height: 50mm;
+    background-color: rgb(132, 44, 128);
+    position: absolute;
+    overflow: hidden;
+    bottom: -42mm;
+    border-top-left-radius: 14.173pt;
+    transform: rotate(45deg);
+    
+   
+}
+
+.recttop2{
+    left: 47.625mm;
+    margin-top: -0.243mm;
+    width: 12mm;
+    height: 1mm;
+    background-color: rgb(7, 0, 4);
+    position: absolute;
+    bottom: 0.5mm;
+    transform: skew(50deg, 0deg);
+   
+}
+
+
+/* Back Side */
+.back {
+    position: relative;
+    width: 59.002mm; /* 223px */
+    height: 83.872mm; /* 317px */
+    margin: 6.085mm; /* 23px */
+    background-color: #fbeaea;
+    border: 0.75pt solid #fbeaea; /* 1px */
+    overflow: hidden;
+    left:59.204mm; /* 254px */
+    top: -6.222mm; /* -341px */
+}
+
+/* Background Elements for Back */
+.id-dark-pink-bottom, .id-pink-bottom, .id-light-pink-bottom, .recttop3, .recttop4, .recttop5 {
+    position: absolute;
+    width: 100%;
+    height: 1mm;
+}
+
+.id-dark-pink-bottom {
+    left: 0mm; /* 0px */
+    margin-top: 76.2mm; /* 288px */
+    width: 10mm; /* 71.7px */
+    height: 1mm; /* 30px */
+    background-color: rgb(16, 15, 15);
+    position: absolute;
+    top:-76.2mm; /* 0px */
+}
+
+.id-pink-bottom {
+    left: 49mm; /* 121px */
+    margin-top: 76.2mm; /* 288px */
+    width: 10mm; /* 109.6px */
+    height: 1mm; /* 30px */
+    background-color: rgb(7, 7, 7);
+    position: absolute;
+    top: -76.2mm; /* 0px */
+}
+
+.id-light-pink-bottom {
+    left: 10.583mm; /* 64px */
+    margin-top: 76.2mm; /* 288px */
+    width: 38mm; /* 71.7px */
+    height: 1mm; /* 30px */
+    background-color: rgb(132, 44, 128);
+    position: absolute;
+    top: -76.2mm; /* 0px */
+}
+
+.recttop3{
+    margin-top: -0.243mm;
+    left: -0.352mm;
+    width: 12mm;
+    height: 1mm;
+    background-color: rgb(7, 0, 4);
+    position: absolute;
+    bottom: 0mm;
+    transform: skew(-50deg, 0deg);
+}
+.recttop4{
+    left: 4.586mm;
+    margin-top: -0.243mm;
+    width: 50mm;
+    height: 50mm;
+    background-color: rgb(132, 44, 128);
+    position: absolute;
+    bottom: -42.686mm;
+    border-top-left-radius: 5mm;
+    transform: rotate(45deg); 
+}
+.recttop5{
+    left:47.625mm;
+    margin-top: -0.243mm;
+    width: 12mm;
+    height: 1mm;
+    background-color: rgb(7, 0, 4);
+    position: absolute;
+    bottom: 0mm;
+    transform: skew(50deg, 0deg);
+}
+
+
+/* Content Styling */
+.id-card-content {
+    position: absolute;
+    top: 14mm;
+    left: 5mm;
+    right: 5mm;
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+/* User Photo */
+.user-photo {
+    width: 26mm;
+    height: 26mm;
+    border-radius: 50%;
+    margin-bottom: 10mm;
+}
+
+.user-photo img {
+    width: 35mm;
+    height: 35mm;
+    position: absolute;
+    top: -5mm;
+    left: 6.05mm;
+    border-radius: 35mm;
+}
+
+/* Text Alignments */
+.user-name {
+    font-size: 11.338pt;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 30mm;
+    position: relative;
+    top: -5mm;
+    left: -33mm;
+}
+.id-number{
+    font-size: 11.338pt;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 30mm;
+    position: relative;
+    top: -30mm;
+    left: -33mm;
+
+}
+.id-title{
+    font-size: 11.338pt;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 30mm;
+    position: relative;
+    top: -67mm;
+    left: -33mm;
+
+} 
+.org-name{
+    font-size: 11.338pt;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 30mm;
+    position: relative;
+    top: -91mm;
+    left: -33mm;
+
+} 
+.org-address{
+    font-size: 11.338pt;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 30mm;
+    position: relative;
+    top: -121mm;
+    left: -33mm;
+
+}
+
+.id-number {
+    font-size: 9pt;
+}
+
+.id-title, .org-name, .org-address {
+    font-size: 8.5pt;
+}
+
+.qr-code {
+    position: absolute;
+    left: 2.645mm; /* 10px */
+    top: 2.645mm; /* 10px */
+    height: 26.458mm; /* 100px */
+    width:26.458mm; /* 100px */
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.qr-code img {
+    width: 10mm;
+    height: 8mm;
+    border-radius: 5pt;
+    position: absolute;
+    top: -11.25mm;
+    left: 83.577mm;
+}
+
+.org-logo {
+    text-align: center;
+    margin-bottom: 5.027mm;
+    position: relative;
+    left: 81mm;
+    top: -204mm;
+    width: 19mm;
+}
+
+.org-logo img {
+    width: 100%;
+    height: auto;
+}
+
+/* Emergency Contact Section */
+.id-emergency-contact{
+    font-size:3mm;
+    position:relative;
+    top: -208mm;
+    left: 72mm;
+}
+.id-blood-group{
+    font-size: 3mm;
+    position: absolute;
+    top: 18mm;
+    left: 72mm;
+}
+.id-dob{
+    left: 72mm;
+    font-size: 3mm;
+    position: absolute;
+    top: 24mm;
+}
+.id-issue-date{
+    left: 72mm;
+    font-size: 8.503pt;
+    position: absolute;
+    top: 30mm;
+}
+.id-expiry-date{
+    left: 72mm;
+    font-size: 8.503pt;
+    position: absolute;
+    top: 36mm;
+}
+.id-policy {
+    left: 1mm;
+    font-size: 7.653pt;
+    position: absolute;
+    top: 39mm;
+
+}
+
+.id-policy {
+    font-size: 7pt;
+    text-align: center;
+    color: #666;
+    left: 64mm;
+    top: 44mm;
+}
+
+strong {
+    font-weight: bold;
+}
